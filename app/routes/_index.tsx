@@ -161,7 +161,6 @@ export default function Index() {
                                     <thead>
                                         <tr style={{ background: '#f5f5f5', textAlign: 'left' }}>
                                             <th style={{ padding: '12px', borderBottom: '1px solid #ddd' }}>Name</th>
-                                            <th style={{ padding: '12px', borderBottom: '1px solid #ddd' }}>Email</th>
                                             <th style={{ padding: '12px', borderBottom: '1px solid #ddd' }}>City</th>
                                             <th style={{ padding: '12px', borderBottom: '1px solid #ddd', textAlign: 'right' }}>Total Spend</th>
                                         </tr>
@@ -170,7 +169,6 @@ export default function Index() {
                                         {sortedCustomers.map((customer) => (
                                             <tr key={customer.id} style={{ borderBottom: '1px solid #eee' }}>
                                                 <td style={{ padding: '12px' }}>{customer.name || <em>Unknown</em>}</td>
-                                                <td style={{ padding: '12px' }}>{customer.email || '-'}</td>
                                                 <td style={{ padding: '12px' }}>{customer.city || '-'}</td>
                                                 <td style={{ padding: '12px', textAlign: 'right', fontFamily: 'monospace' }}>
                                                     {formatCurrency(customer.spend, customer.currency)}
