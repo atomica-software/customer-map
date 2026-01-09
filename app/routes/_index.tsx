@@ -84,7 +84,6 @@ export default function Index() {
                             name="apiKey"
                             id="apiKey"
                             placeholder="sk_test_... or type 'test' for mock data"
-                            defaultValue="test"
                             required
                             style={{ width: '100%', padding: '10px', borderRadius: '4px', border: '1px solid #ccc', fontSize: '16px' }}
                         />
